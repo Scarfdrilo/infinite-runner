@@ -145,7 +145,7 @@ export default function InfiniteRunner() {
           obs.x -= speedRef.current;
           
           // Draw obstacle
-          ctx.fillStyle = "#e94560";
+          ctx.fillStyle = "#22c55e";
           ctx.fillRect(obs.x, GROUND_Y - obs.height, obs.width, obs.height);
 
           // Check collision
@@ -189,7 +189,7 @@ export default function InfiniteRunner() {
       } else if (gameStateRef.current === "gameover") {
         // Draw obstacles (frozen)
         obstaclesRef.current.forEach((obs) => {
-          ctx.fillStyle = "#e94560";
+          ctx.fillStyle = "#22c55e";
           ctx.fillRect(obs.x, GROUND_Y - obs.height, obs.width, obs.height);
         });
 
